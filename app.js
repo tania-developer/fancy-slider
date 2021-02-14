@@ -76,9 +76,11 @@ const createSlider = () => {
     const durationTime = document.getElementById('duration').value || 1000;
     if (durationTime < 0) {
       alert('Please give a positive time value');
-      
+      document.getElementById('slider-container') = '';
     }
-    
+    else{
+      return(durationTime);
+    }
   }
 
   // const durationTime = document.getElementById('duration').value;
