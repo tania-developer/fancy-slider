@@ -76,20 +76,15 @@ const createSlider = () => {
     const durationTime = document.getElementById('duration').value || 1000;
     if (durationTime < 0) {
       alert('Please give a positive time value');
-      document.getElementById('slider-container') = '';
+      item = document.getElementById('slider-container');
+      item.style.display = "none"
+      imagesArea.style.display = 'block';
+
     }
     else{
       return(durationTime);
     }
   }
-
-  // const durationTime = document.getElementById('duration').value;
-  // if (durationTime > 0) {
-  //   const duration = durationTime || 1000;
-  // }
-  // else{
-  //   alert('please enter a positive duration time')
-  // }
   //const duration = document.getElementById('duration').value || 1000;
   sliders.forEach(slide => {
     let item = document.createElement('div')
